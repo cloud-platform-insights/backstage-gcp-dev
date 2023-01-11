@@ -32,6 +32,7 @@ spec:
     metadata:
       labels:
         app: emailservice
+        'backstage.io/kubernetes-id': emailservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -100,6 +101,7 @@ spec:
     metadata:
       labels:
         app: checkoutservice
+        'backstage.io/kubernetes-id': checkoutservice
     spec:
       serviceAccountName: default
       securityContext:
@@ -175,6 +177,7 @@ spec:
     metadata:
       labels:
         app: recommendationservice
+        'backstage.io/kubernetes-id': recommendationservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -245,6 +248,7 @@ spec:
     metadata:
       labels:
         app: frontend
+        'backstage.io/kubernetes-id': frontend
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
@@ -355,6 +359,7 @@ spec:
     metadata:
       labels:
         app: paymentservice
+        'backstage.io/kubernetes-id': paymentservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -421,6 +426,7 @@ spec:
     metadata:
       labels:
         app: productcatalogservice
+        'backstage.io/kubernetes-id': productcatalogservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -487,6 +493,7 @@ spec:
     metadata:
       labels:
         app: cartservice
+        'backstage.io/kubernetes-id': cartservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -555,6 +562,7 @@ spec:
     metadata:
       labels:
         app: loadgenerator
+        'backstage.io/kubernetes-id': loadgenerator
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
@@ -626,6 +634,7 @@ spec:
     metadata:
       labels:
         app: currencyservice
+        'backstage.io/kubernetes-id': currencyservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -693,6 +702,7 @@ spec:
     metadata:
       labels:
         app: shippingservice
+        'backstage.io/kubernetes-id': shippingservice
     spec:
       serviceAccountName: default
       securityContext:
@@ -759,6 +769,7 @@ spec:
     metadata:
       labels:
         app: redis-cart
+        'backstage.io/kubernetes-id': rediscart
     spec:
       securityContext:
         fsGroup: 1000
@@ -826,6 +837,7 @@ spec:
     metadata:
       labels:
         app: adservice
+        'backstage.io/kubernetes-id': adservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5

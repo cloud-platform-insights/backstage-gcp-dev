@@ -11,6 +11,8 @@ metadata:
     - url: https://github.com/googlecloudplatform/microservices-demo
       title: Online Boutique - Upstream repo
       icon: help
+  annotations:
+    'backstage.io/kubernetes-id': frontend
 spec:
   type: service
   lifecycle: experimental
