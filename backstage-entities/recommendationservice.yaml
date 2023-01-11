@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: adservice
-  description: Ad Service for Online Boutique
+  name: recommendationservice
+  description: recommendationservice
   tags:
-    - java
+    - golang
     - backend
     - grpc
   links:
@@ -12,11 +12,12 @@ metadata:
       title: Online Boutique - Upstream repo
       icon: help
   annotations:
-    'backstage.io/kubernetes-id': adservice
+    'backstage.io/kubernetes-id': recommendationservice
 spec:
   type: service
   lifecycle: experimental
   owner: user:guest
   system: online-boutique
-  # dependsOn: ['component:artists-db']
-  apiConsumedBy: ['component:frontend']
+  dependsOn: ['component:frontend']
+  apiConsumedBy:
+  - 'component:productcatalog'

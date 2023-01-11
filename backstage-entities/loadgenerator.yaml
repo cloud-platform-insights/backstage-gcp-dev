@@ -1,22 +1,22 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: adservice
-  description: Ad Service for Online Boutique
+  name: loadgenerator
+  description: loadgenerator
   tags:
-    - java
-    - backend
-    - grpc
+    - python
+    - loadgen
   links:
     - url: https://github.com/googlecloudplatform/microservices-demo
       title: Online Boutique - Upstream repo
       icon: help
   annotations:
-    'backstage.io/kubernetes-id': adservice
+    'backstage.io/kubernetes-id': loadgenerator
 spec:
   type: service
   lifecycle: experimental
   owner: user:guest
   system: online-boutique
-  # dependsOn: ['component:artists-db']
-  apiConsumedBy: ['component:frontend']
+  # dependsOn: ['component:frontend']
+  apiConsumedBy:
+  - 'component:frontend'
