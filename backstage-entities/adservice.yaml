@@ -16,7 +16,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:guest
+  owner: user:default/mokeefe
   system: online-boutique
   # dependsOn: ['component:artists-db']
   apiConsumedBy: ['component:frontend']
