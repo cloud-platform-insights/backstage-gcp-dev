@@ -13,6 +13,7 @@ metadata:
       icon: help
   annotations:
     'backstage.io/kubernetes-id': adservice
+    google.com/cloudbuild-project-slug: cpet-backstage
 spec:
   type: service
   lifecycle: experimental
