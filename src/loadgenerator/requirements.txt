@@ -6,7 +6,7 @@
 #
 brotli==1.0.9
     # via geventhttpclient
-certifi==2022.12.7
+certifi==2023.7.22
     # via
     #   geventhttpclient
     #   requests
@@ -35,8 +35,6 @@ greenlet==2.0.1
     # via gevent
 idna==3.4
     # via requests
-importlib-metadata==5.2.0
-    # via flask
 itsdangerous==2.1.2
     # via flask
 jinja2==3.1.2
@@ -69,8 +67,6 @@ werkzeug==2.2.2
     # via
     #   flask
     #   locust
-zipp==3.11.0
-    # via importlib-metadata
 zope-event==4.6
     # via gevent
 zope-interface==5.5.2
