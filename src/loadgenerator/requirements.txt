@@ -35,8 +35,6 @@ greenlet==2.0.1
     # via gevent
 idna==3.4
     # via requests
-importlib-metadata==5.2.0
-    # via flask
 itsdangerous==2.1.2
     # via flask
 jinja2==3.1.2
@@ -53,7 +51,7 @@ psutil==5.9.4
     # via locust
 pyzmq==24.0.1
     # via locust
-requests==2.28.1
+requests==2.32.0
     # via locust
 roundrobin==0.0.4
     # via locust
@@ -69,8 +67,6 @@ werkzeug==2.2.2
     # via
     #   flask
     #   locust
-zipp==3.11.0
-    # via importlib-metadata
 zope-event==4.6
     # via gevent
 zope-interface==5.5.2
